@@ -6,6 +6,7 @@ import { Toaster } from '@/components/ui/sonner'
 import { useCommandPaletteHotkey } from '@/composables/useCommandPaletteHotkey'
 import { usePreferencesHotkey } from '@/composables/usePreferencesHotkey'
 import { useUIStore } from '@/stores/ui'
+import BizivaAssistant from './biziva/BizivaAssistant.vue'
 
 const uiStore = useUIStore()
 const { isDark } = storeToRefs(uiStore)
@@ -19,6 +20,7 @@ usePreferencesHotkey()
 
 <template>
   <CodemirrorEditor />
+  <BizivaAssistant />
 
   <CommandPalette />
 
